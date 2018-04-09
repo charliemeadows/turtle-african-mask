@@ -1,0 +1,134 @@
+' Initial setup
+GraphicsWindow.BackgroundColor = "LemonChiffon"
+GraphicsWindow.PenColor = "Olive"
+GraphicsWindow.PenWidth = 3
+Turtle.Show()
+Turtle.Speed = 100
+Turtle.X = 300
+Turtle.Y = 400
+'------------------------------------
+' Variables
+sides = 50
+'------------------------------------
+' Left face side
+Turtle.Turn(-45)
+length = 400 / sides
+angle = 90 / sides
+For j = 1 To sides
+  Turtle.Move(length)
+  Turtle.Turn(angle)
+EndFor
+'------------------------------------
+' Rigth face side
+Turtle.Turn(90)
+length = 400 / sides
+angle = 90 / sides
+For j = 1 To sides
+  Turtle.Move(length)
+  Turtle.Turn(angle)
+EndFor
+'------------------------------------
+' Left eye
+Turtle.PenUp()
+Turtle.MoveTo(250,150)
+Turtle.PenDown()
+Turtle.Turn(-Turtle.Angle)
+
+length = 60 / sides
+angle = 360 / sides
+For j = 1 To sides
+  Turtle.Move(length)
+  Turtle.Turn(angle)
+EndFor
+
+Turtle.PenUp()
+Turtle.MoveTo(350,150)
+Turtle.PenDown()
+Turtle.TurnRight()
+
+length = 60 / sides
+angle = 360 / sides
+For j = 1 To sides
+  Turtle.Move(length)
+  Turtle.Turn(angle)
+EndFor
+
+'------------------------------------
+' Right eye
+Turtle.PenUp()
+Turtle.MoveTo(240,150)
+Turtle.PenDown()
+Turtle.TurnRight()
+
+length = 100 / sides
+angle = 360 / sides
+For j = 1 To sides
+  Turtle.Move(length)
+  Turtle.Turn(angle)
+EndFor
+
+Turtle.PenUp()
+Turtle.MoveTo(360,150)
+Turtle.PenDown()
+Turtle.TurnRight()
+
+length = 100 / sides
+angle = 360 / sides
+For j = 1 To sides
+  Turtle.Move(length)
+  Turtle.Turn(angle)
+EndFor
+'------------------------------------
+' Mouth  
+GraphicsWindow.PenWidth = 7
+GraphicsWindow.PenColor = "Brown"
+Turtle.PenUp()
+Turtle.MoveTo(280,300)
+Turtle.PenDown()
+Turtle.Turn(-Turtle.Angle)
+Turtle.TurnRight()
+Turtle.Move(50)
+'------------------------------------
+' Nose
+GraphicsWindow.PenWidth = 3
+GraphicsWindow.PenColor = "Olive"
+Turtle.PenUp()
+Turtle.MoveTo(300,200)
+Turtle.PenDown()
+
+Turtle.Turn(-Turtle.Angle)
+Turtle.Turn(180)
+Turtle.Move(40)
+Turtle.TurnLeft()
+Turtle.Move(20)
+Turtle.MoveTo(300,200)
+
+Turtle.Turn(-Turtle.Angle)
+Turtle.Turn(180)
+Turtle.Move(40)
+Turtle.TurnRight()
+Turtle.Move(20)
+Turtle.MoveTo(300,200)
+
+'----------------
+Turtle.PenUp()
+Turtle.MoveTo(300,425)
+Turtle.PenDown()
+Turtle.Turn(-Turtle.Angle)
+
+Turtle.Turn(-45)
+length = 450 / sides
+angle = 90 / sides
+For j = 1 To sides
+  Turtle.Move(length)
+  Turtle.Turn(angle)
+EndFor
+
+Turtle.Turn(90)
+length = 450 / sides
+angle = 90 / sides
+For j = 1 To sides
+  Turtle.Move(length)
+  Turtle.Turn(angle)
+EndFor
+
